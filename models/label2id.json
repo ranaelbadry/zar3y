@@ -1,0 +1,12 @@
+{
+  "Corn_(maize)___Common_rust_": 0,
+  "Pepper,_bell___Bacterial_spot": 1,
+  "Pepper,_bell___healthy": 2,
+  "Potato___Early_blight": 3,
+  "Potato___Late_blight": 4,
+  "Potato___healthy": 5,
+  "Tomato___Early_blight": 6,
+  "Tomato___Late_blight": 7,
+  "Tomato___Leaf_Mold": 8,
+  "Tomato___healthy": 9
+}

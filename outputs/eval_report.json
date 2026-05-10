@@ -1,0 +1,81 @@
+{
+  "overall": {
+    "accuracy": 0.9591957421643997,
+    "macro_f1": 0.9500412858576874,
+    "macro_precision": 0.9451561807573023,
+    "macro_recall": 0.9603109267585594,
+    "n_samples": 1691
+  },
+  "per_class": {
+    "Corn_(maize)___Common_rust_": {
+      "display_name": "Corn \u2014 Common Rust",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 179
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "display_name": "Pepper \u2014 Bacterial Spot",
+      "precision": 0.9615384615384616,
+      "recall": 1.0,
+      "f1": 0.9803921568627451,
+      "support": 150
+    },
+    "Pepper,_bell___healthy": {
+      "display_name": "Pepper \u2014 Healthy",
+      "precision": 0.9908675799086758,
+      "recall": 0.9819004524886877,
+      "f1": 0.9863636363636363,
+      "support": 221
+    },
+    "Potato___Early_blight": {
+      "display_name": "Potato \u2014 Early Blight",
+      "precision": 0.9868421052631579,
+      "recall": 1.0,
+      "f1": 0.9933774834437086,
+      "support": 150
+    },
+    "Potato___Late_blight": {
+      "display_name": "Potato \u2014 Late Blight",
+      "precision": 0.9050632911392406,
+      "recall": 0.9533333333333334,
+      "f1": 0.9285714285714286,
+      "support": 150
+    },
+    "Potato___healthy": {
+      "display_name": "Potato \u2014 Healthy",
+      "precision": 0.7931034482758621,
+      "recall": 1.0,
+      "f1": 0.8846153846153846,
+      "support": 23
+    },
+    "Tomato___Early_blight": {
+      "display_name": "Tomato \u2014 Early Blight",
+      "precision": 0.9743589743589743,
+      "recall": 0.76,
+      "f1": 0.8539325842696629,
+      "support": 150
+    },
+    "Tomato___Late_blight": {
+      "display_name": "Tomato \u2014 Late Blight",
+      "precision": 0.9475524475524476,
+      "recall": 0.9442508710801394,
+      "f1": 0.9458987783595113,
+      "support": 287
+    },
+    "Tomato___Leaf_Mold": {
+      "display_name": "Tomato \u2014 Leaf Mold",
+      "precision": 0.9328859060402684,
+      "recall": 0.972027972027972,
+      "f1": 0.952054794520548,
+      "support": 143
+    },
+    "Tomato___healthy": {
+      "display_name": "Tomato \u2014 Healthy",
+      "precision": 0.959349593495935,
+      "recall": 0.9915966386554622,
+      "f1": 0.9752066115702479,
+      "support": 238
+    }
+  }
+}
