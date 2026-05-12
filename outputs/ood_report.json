@@ -1,0 +1,369 @@
+{
+  "total_field_photos": 40,
+  "labeled_photos": 40,
+  "correct_predictions": 21,
+  "ood_top1_accuracy": 0.525,
+  "failure_cases_saved": 3,
+  "per_image_results": [
+    {
+      "image": "/content/Zar3y/data/field_photos/Corn_(maize)___Common_rust_/photo1.jpg",
+      "true_label": "Corn_(maize)___Common_rust_",
+      "pred_label": "Corn_(maize)___Common_rust_",
+      "confidence": 0.9986,
+      "correct": true,
+      "description": "Common rust causes small, powdery, reddish-brown pustules on both leaf surfaces.",
+      "next_step": "Apply fungicide (e.g. propiconazole) early. Remove severely infected leaves."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Corn_(maize)___Common_rust_/photo2.jpg",
+      "true_label": "Corn_(maize)___Common_rust_",
+      "pred_label": "Corn_(maize)___Common_rust_",
+      "confidence": 0.9999,
+      "correct": true,
+      "description": "Common rust causes small, powdery, reddish-brown pustules on both leaf surfaces.",
+      "next_step": "Apply fungicide (e.g. propiconazole) early. Remove severely infected leaves."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Corn_(maize)___Common_rust_/photo3.jpg",
+      "true_label": "Corn_(maize)___Common_rust_",
+      "pred_label": "Corn_(maize)___Common_rust_",
+      "confidence": 0.9012,
+      "correct": true,
+      "description": "Common rust causes small, powdery, reddish-brown pustules on both leaf surfaces.",
+      "next_step": "Apply fungicide (e.g. propiconazole) early. Remove severely infected leaves."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Corn_(maize)___Common_rust_/photo4.jpg",
+      "true_label": "Corn_(maize)___Common_rust_",
+      "pred_label": "Corn_(maize)___Common_rust_",
+      "confidence": 0.9999,
+      "correct": true,
+      "description": "Common rust causes small, powdery, reddish-brown pustules on both leaf surfaces.",
+      "next_step": "Apply fungicide (e.g. propiconazole) early. Remove severely infected leaves."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Pepper,_bell___Bacterial_spot/photo1.jpg",
+      "true_label": "Pepper,_bell___Bacterial_spot",
+      "pred_label": "Corn_(maize)___Common_rust_",
+      "confidence": 0.7706,
+      "correct": false,
+      "description": "Common rust causes small, powdery, reddish-brown pustules on both leaf surfaces.",
+      "next_step": "Apply fungicide (e.g. propiconazole) early. Remove severely infected leaves."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Pepper,_bell___Bacterial_spot/photo2.jpg",
+      "true_label": "Pepper,_bell___Bacterial_spot",
+      "pred_label": "Pepper,_bell___Bacterial_spot",
+      "confidence": 0.6558,
+      "correct": true,
+      "description": "Bacterial spot produces water-soaked, dark lesions on leaves and fruit.",
+      "next_step": "Use copper-based bactericide. Avoid overhead irrigation."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Pepper,_bell___Bacterial_spot/photo3.jpg",
+      "true_label": "Pepper,_bell___Bacterial_spot",
+      "pred_label": "Tomato___Late_blight",
+      "confidence": 0.9463,
+      "correct": false,
+      "description": "Late blight appears as dark, water-soaked lesions on leaves and stems.",
+      "next_step": "Apply metalaxyl or cymoxanil immediately. Remove and destroy infected parts."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Pepper,_bell___Bacterial_spot/photo4.jpg",
+      "true_label": "Pepper,_bell___Bacterial_spot",
+      "pred_label": "Pepper,_bell___Bacterial_spot",
+      "confidence": 0.5696,
+      "correct": true,
+      "description": "Bacterial spot produces water-soaked, dark lesions on leaves and fruit.",
+      "next_step": "Use copper-based bactericide. Avoid overhead irrigation."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Pepper,_bell___healthy/photo1.jpg",
+      "true_label": "Pepper,_bell___healthy",
+      "pred_label": "Pepper,_bell___healthy",
+      "confidence": 0.9199,
+      "correct": true,
+      "description": "No disease detected. The plant appears healthy.",
+      "next_step": "Continue regular monitoring and good agronomic practices."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Pepper,_bell___healthy/photo2.jpg",
+      "true_label": "Pepper,_bell___healthy",
+      "pred_label": "Pepper,_bell___healthy",
+      "confidence": 0.9862,
+      "correct": true,
+      "description": "No disease detected. The plant appears healthy.",
+      "next_step": "Continue regular monitoring and good agronomic practices."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Pepper,_bell___healthy/photo4.jpg",
+      "true_label": "Pepper,_bell___healthy",
+      "pred_label": "Tomato___Late_blight",
+      "confidence": 0.6819,
+      "correct": false,
+      "description": "Late blight appears as dark, water-soaked lesions on leaves and stems.",
+      "next_step": "Apply metalaxyl or cymoxanil immediately. Remove and destroy infected parts."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Pepper,_bell___healthy/photo5.jpg",
+      "true_label": "Pepper,_bell___healthy",
+      "pred_label": "Tomato___Early_blight",
+      "confidence": 0.8132,
+      "correct": false,
+      "description": "Early blight causes dark concentric rings on lower, older leaves.",
+      "next_step": "Apply mancozeb or copper fungicide. Improve air circulation."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Potato___Early_blight/photo1.jpg",
+      "true_label": "Potato___Early_blight",
+      "pred_label": "Corn_(maize)___Common_rust_",
+      "confidence": 0.5461,
+      "correct": false,
+      "description": "Common rust causes small, powdery, reddish-brown pustules on both leaf surfaces.",
+      "next_step": "Apply fungicide (e.g. propiconazole) early. Remove severely infected leaves."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Potato___Early_blight/photo2.jpg",
+      "true_label": "Potato___Early_blight",
+      "pred_label": "Tomato___Late_blight",
+      "confidence": 0.8645,
+      "correct": false,
+      "description": "Late blight appears as dark, water-soaked lesions on leaves and stems.",
+      "next_step": "Apply metalaxyl or cymoxanil immediately. Remove and destroy infected parts."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Potato___Early_blight/photo3.jpg",
+      "true_label": "Potato___Early_blight",
+      "pred_label": "Potato___Early_blight",
+      "confidence": 0.8785,
+      "correct": true,
+      "description": "Early blight shows dark, target-like concentric rings on older leaves.",
+      "next_step": "Apply chlorothalonil or mancozeb fungicide. Remove infected foliage."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Potato___Early_blight/photo4.jpg",
+      "true_label": "Potato___Early_blight",
+      "pred_label": "Tomato___Late_blight",
+      "confidence": 0.4989,
+      "correct": false,
+      "description": "Late blight appears as dark, water-soaked lesions on leaves and stems.",
+      "next_step": "Apply metalaxyl or cymoxanil immediately. Remove and destroy infected parts."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Potato___Late_blight/photo1.jpg",
+      "true_label": "Potato___Late_blight",
+      "pred_label": "Potato___Early_blight",
+      "confidence": 0.5147,
+      "correct": false,
+      "description": "Early blight shows dark, target-like concentric rings on older leaves.",
+      "next_step": "Apply chlorothalonil or mancozeb fungicide. Remove infected foliage."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Potato___Late_blight/photo2.jpg",
+      "true_label": "Potato___Late_blight",
+      "pred_label": "Potato___Late_blight",
+      "confidence": 0.8548,
+      "correct": true,
+      "description": "Late blight causes large, irregular, water-soaked dark lesions.",
+      "next_step": "Apply metalaxyl fungicide immediately. Destroy infected plants."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Potato___Late_blight/photo3.jpg",
+      "true_label": "Potato___Late_blight",
+      "pred_label": "Tomato___Late_blight",
+      "confidence": 0.679,
+      "correct": false,
+      "description": "Late blight appears as dark, water-soaked lesions on leaves and stems.",
+      "next_step": "Apply metalaxyl or cymoxanil immediately. Remove and destroy infected parts."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Potato___Late_blight/photo4.jpg",
+      "true_label": "Potato___Late_blight",
+      "pred_label": "Potato___Late_blight",
+      "confidence": 0.7212,
+      "correct": true,
+      "description": "Late blight causes large, irregular, water-soaked dark lesions.",
+      "next_step": "Apply metalaxyl fungicide immediately. Destroy infected plants."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Potato___healthy/photo1.jpg",
+      "true_label": "Potato___healthy",
+      "pred_label": "Potato___healthy",
+      "confidence": 0.791,
+      "correct": true,
+      "description": "No disease detected. The plant appears healthy.",
+      "next_step": "Continue regular monitoring and good agronomic practices."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Potato___healthy/photo2.jpg",
+      "true_label": "Potato___healthy",
+      "pred_label": "Pepper,_bell___healthy",
+      "confidence": 0.6229,
+      "correct": false,
+      "description": "No disease detected. The plant appears healthy.",
+      "next_step": "Continue regular monitoring and good agronomic practices."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Potato___healthy/photo3.jpg",
+      "true_label": "Potato___healthy",
+      "pred_label": "Potato___Late_blight",
+      "confidence": 0.5527,
+      "correct": false,
+      "description": "Late blight causes large, irregular, water-soaked dark lesions.",
+      "next_step": "Apply metalaxyl fungicide immediately. Destroy infected plants."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Potato___healthy/photo4.jpg",
+      "true_label": "Potato___healthy",
+      "pred_label": "Tomato___Late_blight",
+      "confidence": 0.3637,
+      "correct": false,
+      "description": "Late blight appears as dark, water-soaked lesions on leaves and stems.",
+      "next_step": "Apply metalaxyl or cymoxanil immediately. Remove and destroy infected parts."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___Early_blight/photo1.jpg",
+      "true_label": "Tomato___Early_blight",
+      "pred_label": "Potato___Early_blight",
+      "confidence": 0.4448,
+      "correct": false,
+      "description": "Early blight shows dark, target-like concentric rings on older leaves.",
+      "next_step": "Apply chlorothalonil or mancozeb fungicide. Remove infected foliage."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___Early_blight/photo2.jpg",
+      "true_label": "Tomato___Early_blight",
+      "pred_label": "Tomato___Early_blight",
+      "confidence": 0.7695,
+      "correct": true,
+      "description": "Early blight causes dark concentric rings on lower, older leaves.",
+      "next_step": "Apply mancozeb or copper fungicide. Improve air circulation."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___Early_blight/photo3.jpg",
+      "true_label": "Tomato___Early_blight",
+      "pred_label": "Potato___Early_blight",
+      "confidence": 0.707,
+      "correct": false,
+      "description": "Early blight shows dark, target-like concentric rings on older leaves.",
+      "next_step": "Apply chlorothalonil or mancozeb fungicide. Remove infected foliage."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___Early_blight/photo4.jpg",
+      "true_label": "Tomato___Early_blight",
+      "pred_label": "Tomato___Early_blight",
+      "confidence": 0.7764,
+      "correct": true,
+      "description": "Early blight causes dark concentric rings on lower, older leaves.",
+      "next_step": "Apply mancozeb or copper fungicide. Improve air circulation."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___Late_blight/photo1.jpg",
+      "true_label": "Tomato___Late_blight",
+      "pred_label": "Tomato___Late_blight",
+      "confidence": 0.9582,
+      "correct": true,
+      "description": "Late blight appears as dark, water-soaked lesions on leaves and stems.",
+      "next_step": "Apply metalaxyl or cymoxanil immediately. Remove and destroy infected parts."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___Late_blight/photo2.jpg",
+      "true_label": "Tomato___Late_blight",
+      "pred_label": "Tomato___Late_blight",
+      "confidence": 0.9869,
+      "correct": true,
+      "description": "Late blight appears as dark, water-soaked lesions on leaves and stems.",
+      "next_step": "Apply metalaxyl or cymoxanil immediately. Remove and destroy infected parts."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___Late_blight/photo3.jpg",
+      "true_label": "Tomato___Late_blight",
+      "pred_label": "Tomato___Late_blight",
+      "confidence": 0.9444,
+      "correct": true,
+      "description": "Late blight appears as dark, water-soaked lesions on leaves and stems.",
+      "next_step": "Apply metalaxyl or cymoxanil immediately. Remove and destroy infected parts."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___Late_blight/photo4.jpg",
+      "true_label": "Tomato___Late_blight",
+      "pred_label": "Tomato___Late_blight",
+      "confidence": 0.7307,
+      "correct": true,
+      "description": "Late blight appears as dark, water-soaked lesions on leaves and stems.",
+      "next_step": "Apply metalaxyl or cymoxanil immediately. Remove and destroy infected parts."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___Leaf_Mold/photo1.jpg",
+      "true_label": "Tomato___Leaf_Mold",
+      "pred_label": "Tomato___Leaf_Mold",
+      "confidence": 0.3499,
+      "correct": true,
+      "description": "Leaf mold causes yellow patches on upper leaf surface with olive mold below.",
+      "next_step": "Improve ventilation. Apply copper-based fungicide."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___Leaf_Mold/photo2.jpg",
+      "true_label": "Tomato___Leaf_Mold",
+      "pred_label": "Pepper,_bell___Bacterial_spot",
+      "confidence": 0.5988,
+      "correct": false,
+      "description": "Bacterial spot produces water-soaked, dark lesions on leaves and fruit.",
+      "next_step": "Use copper-based bactericide. Avoid overhead irrigation."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___Leaf_Mold/photo3.jpg",
+      "true_label": "Tomato___Leaf_Mold",
+      "pred_label": "Tomato___Late_blight",
+      "confidence": 0.9183,
+      "correct": false,
+      "description": "Late blight appears as dark, water-soaked lesions on leaves and stems.",
+      "next_step": "Apply metalaxyl or cymoxanil immediately. Remove and destroy infected parts."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___Leaf_Mold/photo4.jpg",
+      "true_label": "Tomato___Leaf_Mold",
+      "pred_label": "Pepper,_bell___Bacterial_spot",
+      "confidence": 0.5945,
+      "correct": false,
+      "description": "Bacterial spot produces water-soaked, dark lesions on leaves and fruit.",
+      "next_step": "Use copper-based bactericide. Avoid overhead irrigation."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___healthy/photo1.jpg",
+      "true_label": "Tomato___healthy",
+      "pred_label": "Tomato___Leaf_Mold",
+      "confidence": 0.6731,
+      "correct": false,
+      "description": "Leaf mold causes yellow patches on upper leaf surface with olive mold below.",
+      "next_step": "Improve ventilation. Apply copper-based fungicide."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___healthy/photo2.jpg",
+      "true_label": "Tomato___healthy",
+      "pred_label": "Pepper,_bell___healthy",
+      "confidence": 0.5485,
+      "correct": false,
+      "description": "No disease detected. The plant appears healthy.",
+      "next_step": "Continue regular monitoring and good agronomic practices."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___healthy/photo3.jpg",
+      "true_label": "Tomato___healthy",
+      "pred_label": "Tomato___healthy",
+      "confidence": 0.3931,
+      "correct": true,
+      "description": "No disease detected. The plant appears healthy.",
+      "next_step": "Continue regular monitoring and good agronomic practices."
+    },
+    {
+      "image": "/content/Zar3y/data/field_photos/Tomato___healthy/photo4.jpg",
+      "true_label": "Tomato___healthy",
+      "pred_label": "Tomato___healthy",
+      "confidence": 0.4559,
+      "correct": true,
+      "description": "No disease detected. The plant appears healthy.",
+      "next_step": "Continue regular monitoring and good agronomic practices."
+    }
+  ]
+}
