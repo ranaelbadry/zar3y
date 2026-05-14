@@ -1,7 +1,10 @@
-import streamlit as st
-import requests
-from PIL import Image
+import base64
 import io
+import os
+
+import requests
+import streamlit as st
+from PIL import Image
 
 st.set_page_config(
     page_title="Zar3y - Crop Disease Detection",
@@ -9,32 +12,32 @@ st.set_page_config(
     layout="centered",
 )
 
-BACKEND_URL = "http://localhost:8000/predict"
+BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000/predict")
 
-st.title("🌿 Zar3y — Crop Disease Detection")
-st.markdown("Upload or take a photo of a plant leaf and we'll identify any disease instantly.")
+st.title("🌿 Zar3y")
+st.caption("Crop disease detection from phone photos")
 
-tab1, tab2 = st.tabs(["📁 Upload Image", "📷 Use Camera"])
-
-uploaded_file = None
-
-with tab1:
-    uploaded_file = st.file_uploader(
-        "Choose a leaf image",
-        type=["jpg", "jpeg", "png"],
-        key="upload",
+with st.container():
+    st.markdown(
+        "Hassan sees suspicious yellow spots on a tomato leaf and needs a quick, explainable decision before spraying."
     )
 
-with tab2:
-    camera_file = st.camera_input("Take a photo of the leaf", key="camera")
-    if camera_file:
+tab_upload, tab_camera = st.tabs(["Upload Image", "Use Camera"])
+
+uploaded_file = None
+with tab_upload:
+    uploaded_file = st.file_uploader("Choose a leaf image", type=["jpg", "jpeg", "png"])
+
+with tab_camera:
+    camera_file = st.camera_input("Take a photo of the leaf")
+    if camera_file is not None:
         uploaded_file = camera_file
 
-if uploaded_file:
-    image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+if uploaded_file is not None:
+    image = Image.open(uploaded_file).convert("RGB")
+    st.image(image, caption="Input photo", use_container_width=True)
 
-    with st.spinner("Analyzing image..."):
+    with st.spinner("Analyzing leaf photo..."):
         buf = io.BytesIO()
         image.save(buf, format="JPEG")
         buf.seek(0)
@@ -43,30 +46,40 @@ if uploaded_file:
             response = requests.post(
                 BACKEND_URL,
                 files={"file": ("leaf.jpg", buf, "image/jpeg")},
-                timeout=10,
+                timeout=30,
             )
             response.raise_for_status()
             data = response.json()
-
-            confidence = data["confidence"]
-
-            if confidence >= 80:
-                badge = "🟢 High Confidence"
-            elif confidence >= 60:
-                badge = "🟡 Medium Confidence"
-            else:
-                badge = "🔴 Low Confidence"
-
-            st.divider()
-            st.subheader(f"Result: {data['class']}")
-            st.metric("Confidence", f"{confidence}%", delta=badge)
-
-            st.info(f"**Symptoms:** {data['description']}")
-            st.success(f"**Recommended Action:** {data['action']}")
-
         except requests.exceptions.ConnectionError:
-            st.error("Cannot connect to the backend. Make sure it is running on localhost:8000")
+            st.error("Cannot connect to the backend on localhost:8000.")
             st.code("uvicorn backend.main:app --reload --port 8000")
+            st.stop()
+        except Exception as exc:
+            st.error(f"Prediction failed: {exc}")
+            st.stop()
 
-        except Exception as e:
-            st.error(f"Something went wrong: {e}")
+    confidence = float(data["confidence"])
+    if confidence >= 80:
+        confidence_label = "High confidence"
+    elif confidence >= 60:
+        confidence_label = "Medium confidence"
+    else:
+        confidence_label = "Low confidence"
+
+    st.divider()
+    st.subheader(data["class"])
+    st.metric("Confidence", f"{confidence:.1f}%", confidence_label)
+
+    overlay = data.get("gradcam_overlay")
+    if overlay:
+        st.image(
+            Image.open(io.BytesIO(base64.b64decode(overlay))),
+            caption="Grad-CAM overlay",
+            use_container_width=True,
+        )
+    else:
+        st.warning("Grad-CAM overlay was not available for this run.")
+
+    st.info(f"Symptoms: {data['description']}")
+    st.success(f"Next step: {data['action']}")
+    st.caption(f"Backend latency: {data.get('latency_ms', 'n/a')} ms")
